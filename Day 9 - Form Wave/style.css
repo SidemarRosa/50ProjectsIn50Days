@@ -31,12 +31,12 @@ body {
   color: orangered;
 }
 
-.form-controll{
+.form-control{
   position: relative;
   width:300px;
   margin: 20px 0px 40px;
 }
-.form-controll input{
+.form-control input{
   background-color: transparent;
   border: 0;
   border-bottom: 1px #fff solid;
@@ -45,7 +45,8 @@ body {
   padding: 15px 0;
   color: #fff;
 }
-.form-controll input:focus, .form-controll input:valid{
+.form-control input:focus,
+.form-control input:valid{
   outline: 0;
 }
 
@@ -64,4 +65,28 @@ body {
 }
 .btn:focus{
   outline: 0;
+}
+.btn:active{
+  transform: scale(0.98);
+}
+.text{
+  margin-top: 30px;
+}
+
+.form-control label{
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+}
+
+.form-control input:focus + label span ,
+.form-control input:valid + label span {
+  color: orangered;
+  transform: translateY(-30px);
 }
